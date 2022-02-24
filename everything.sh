@@ -1,5 +1,10 @@
+# change dns
+nmcli connection modify "Wired connection 1" ipv4.dns "1.1.1.1,1.0.0.1"
+nmcli connection down "Wired connection 1"
+nmcli connection up "Wired connection 1"
+
 # cloudflare vpn
-$(curl -sL bit.ly/warpcli)
+curl -sL bit.ly/warpcli | bash
 
 # timezone
 timedatectl set-timezone America/New_York 
