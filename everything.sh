@@ -18,4 +18,4 @@ sleep 1
 sudo apt install mpv
 
 # install warp-cli
-curl -sL bit.ly/warpcli
+curl -sL bit.ly/warpcli | bash
